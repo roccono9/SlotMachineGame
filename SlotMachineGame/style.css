@@ -1,0 +1,218 @@
+/*On load the page has an orange background*/
+body{
+	background-color: orange;
+	z-index: 98;
+}
+
+/*place confetti gif as background image with 
+height of 0, transition time of 3 if a player has 
+won a game*/
+#confetti{
+	background-image: url('images/confetti.gif');
+	position: absolute;
+	z-index: 96;
+	height: 0px;
+	width: 99%;
+	transition: height 3s;
+}
+
+/*On load the gear symbol is white and the
+cursor will change to a pointer when over the gear*/
+#gear{
+	color: white;
+	cursor: pointer;
+}
+
+/*Cotainer holding images and handle*/
+#spinner{
+	width: auto;
+	min-width: 500px;
+	margin-left: 30%;
+	margin-top: 120px;
+	min-height: 180px;
+	display: inline-flex;
+	z-index: 100;
+}
+
+/*Main red div containing the imagebackground
+and images*/
+#mainbody{
+	width: 415px;
+	max-height: 100%;
+	margin-left: 30px;
+	height: 180px;
+	border-radius: 20px;
+	background-color: red;
+	border: 2px solid red;
+	position: relative;
+}
+
+/*Black backgroung around the images, 20px
+smaller than container on all sides*/
+#imagebackground{
+	border: 2px solid black;
+	width: auto;
+	min-width: 370px;
+	border-radius: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-height: 80%;
+	background-color: black;
+	position: relative;
+	display: inline-block;
+}
+
+/*Container for the three images, all
+inline*/
+.fruitImage{
+	display: inline-block;
+	background-color: white;
+	border-radius: 10px;
+	max-width: 100px;
+	position: centre;
+	max-height: 100px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	overflow: hidden;
+}
+
+/*Set image width and height*/
+.images{
+	width: 100px;
+	height: auto;
+}
+
+/*Image 1 image, background
+and transition*/
+#image1 {
+	background: url('images/sprite.png');
+	background-repeat: repeat-y;
+	width: 100px;
+	height: auto;
+	transition: object-position 1s;
+}
+
+/*Image 2 image, background
+and transition*/
+#image2 {
+	background: url('images/sprite.png');
+	background-repeat: repeat;
+	width: 100px;
+	height: auto;
+	transition: object-position 1s;
+}
+
+/*Image 3 image, background
+and transition*/
+#image3 {
+	background: url('images/sprite.png');
+	background-repeat: repeat-y;
+	width: 100px;
+	height: auto;
+	transition: object-position 1s;
+}
+
+/*Handle container, width and height
+defined as well as position*/
+#handleContainer{
+	width: 8%;
+	min-height: 296px;
+	position: relative;
+	margin-top: -25%;
+}
+
+/*Second handle container that is rotated 180deg*/
+#handleRotate{
+	height: 100%;
+	transform: rotate(180deg) translate(-0%);
+}
+
+/*Take away all button outlines and borders*/
+button{
+	outline: none;
+  border: none;
+}
+
+/*Round top to the handlebar*/
+#handleTop{
+	display: inline-block;
+  cursor: pointer;
+	border-radius: 50%;
+	margin-top: -10px;
+	width: 60%;
+	height: 30px;
+	margin-left: 24%;
+	background-color: black;
+	border: 2px solid black;
+}
+
+/*Bar that shrinks and eases back to
+original height*/
+#handleBar{
+	background-color: black;
+	height: 50%;
+	width: 30%;
+	margin-left: 40%;
+	margin-top: -10px;
+	transition: height 20% ease-in-out;
+}
+
+/*Base of the handlebar*/
+#handleBase{
+	background-color: grey;
+	height: 12%;
+	width: 90%;
+	margin-top: -175%;
+	position: relative;
+	margin-left: 10%;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+/*Menu choice, originally set to no display*/
+#menu{
+	min-width: 40%;
+	min-height: 250px;
+	margin-left: 30%;
+	margin-top: 100px;
+	border-radius: 10px;
+	border: 2px solid white;
+	color: white;
+	background-color: black;
+	text-align: justify;
+	font-size: 1.5em;
+	display: none;
+	position: absolute;
+	z-index: 99;
+}
+
+/*Radio button within the menu*/
+div form input{
+	padding-top: 10px;
+	color: white;
+	border: 2px solid white;
+	margin-left: 42%;
+	margin-top: 15%;
+}
+
+/*Button to exit menu*/
+div form button{
+	width: 50px;
+	color: white;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+	border-radius: 50%;
+	background-color: black;
+	border: 2px solid white;
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: 42%;
+}

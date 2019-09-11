@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Robert Colan-O'Leary - Assignment 2, Part 1.</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="script.js"></script>
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  </head>
+  <body>
+		<div id="confetti" item-width="">
+		</div>
+		
+		<div id="gearBlock">
+			<h1><span id="gear" onclick="showMenu()"><i style='font-size:24px' class='fas'>&#xf013;</i></span></h1>
+		</div>
+		
+		<div id="menu">
+			<form id="menuForm">
+  			<input type="radio" onclick="colourChange('1');"  name="menuColour" value="orange" checked="checked"><span class="checkmark"></span><label for="orange"> Orange</label><br>
+  			<input type="radio" onclick="colourChange('2');" name="menuColour" value="white"><span class="checkmark"></span><label for="white"> White</label><br>
+				<button id="exitMenu" type="button" onclick="closeMenu();"><h5>X</h5></button>
+			</form>
+		</div>
+		
+		<div id="spinner">
+			<div id="mainbody">
+				<div id="imagebackground">
+					<div class="fruitImage">
+						<img id="image1" src ="images/sprite.png" alt = "picture 1">
+					</div>
+					<div class="fruitImage">
+						<img id="image2" src ="images/sprite.png" alt = "picture 2">
+					</div>
+					<div class="fruitImage">
+						<img id="image3" src ="images/sprite.png" alt = "picture 3">
+					</div>
+				</div>
+			</div>
+			<div id="handleContainer">
+				<div id="handleRotate">
+					<div id="handleBase">
+					</div>
+					<div id="handleBar">
+					</div>
+					<button id="handleTop" type="button" onclick="pullHandle();"></button>
+				</div>
+			</div>
+		</div>
+
+  </body>
+</html>
